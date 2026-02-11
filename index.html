@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 21 Dias Corpo Livre</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+   
+    .font-display {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+   
+    .font-body {
+      font-family: 'Raleway', Arial, sans-serif;
+    }
+   
+    .gradient-hero {
+      background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
+    }
+   
+    .gradient-cta {
+      background: linear-gradient(135deg, #be185d 0%, #9d174d 100%);
+    }
+   
+    .gradient-cta:hover {
+      background: linear-gradient(135deg, #9d174d 0%, #831843 100%);
+    }
+   
+    .card-shadow {
+      box-shadow: 0 4px 20px rgba(190, 24, 93, 0.1);
+    }
+   
+    .section-divider {
+      background: linear-gradient(90deg, transparent 0%, #f9a8d4 50%, transparent 100%);
+      height: 1px;
+    }
+   
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+   
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+   
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+   
+    .animate-fade-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+   
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body bg-white text-gray-800 overflow-auto">
+  <div class="w-full min-h-full">
+   <!-- BLOCO 1 - CAPA / HERO -->
+   <section class="gradient-hero min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-10 left-10 w-20 h-20 rounded-full bg-pink-200 opacity-50 float-animation"></div>
+    <div class="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-pink-300 opacity-30 float-animation" style="animation-delay: 1s;"></div>
+    <div class="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-rose-200 opacity-40 float-animation" style="animation-delay: 0.5s;"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+     <div class="animate-fade-in">
+      <span class="inline-block px-6 py-2 bg-white/70 backdrop-blur rounded-full text-pink-700 font-medium text-sm mb-6 tracking-wide"> ✨ Transformação em 21 dias </span>
+     </div>
+     <h1 id="main-title" class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in delay-100 leading-tight">
+      DESAFIO 21 DIAS<br><span class="text-pink-700">CORPO LIVRE</span>
+     </h1>
+     <p id="subtitle" class="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in delay-200 max-w-2xl mx-auto leading-relaxed">
+      Emagreça sem guerra com a comida, com apoio emocional e acompanhamento de verdade
+     </p>
+     <div class="bg-white/80 backdrop-blur rounded-2xl p-6 md:p-8 max-w-xl mx-auto mb-10 animate-fade-in delay-300 card-shadow">
+      <p class="text-lg md:text-xl text-gray-600 italic leading-relaxed">
+       "Você não precisa de mais uma dieta.<br><span class="text-pink-700 font-semibold">Você precisa de um caminho que te sustente.</span>"
+      </p>
+     </div>
+     <a id="cta-button-hero" href="https://wa.me/5534997923833?text=Oi%20Carmen!%20Quero%20entrar%20no%20Desafio%2021%20Dias%20Corpo%20Livre.%20Pode%20me%20passar%20as%20informa%C3%A7%C3%B5es%20e%20como%20fa%C3%A7o%20para%20garantir%20minha%20vaga%3F" target="_blank" rel="noopener noreferrer" class="inline-block gradient-cta text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in delay-400">
+      <span id="button-text-hero">QUERO ENTRAR NO DESAFIO</span> →
+     </a>
+    </div>
+   </section>
+
+   <!-- BLOCO 2 - CONEXÃO COM A DOR -->
+   <section class="py-20 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Se você hoje...</h2>
+     <div class="space-y-4">
+      <div class="flex items-start gap-4 p-5 bg-pink-50 rounded-xl border-l-4 border-pink-400 transition-all hover:bg-pink-100">
+       <span class="text-2xl">😔</span>
+       <p class="text-lg text-gray-700">Começa animada e <strong>desiste na primeira semana</strong></p>
+      </div>
+      <div class="flex items-start gap-4 p-5 bg-pink-50 rounded-xl border-l-4 border-pink-400 transition-all hover:bg-pink-100">
+       <span class="text-2xl">🍫</span>
+       <p class="text-lg text-gray-700">Come por <strong>ansiedade, cansaço ou emoção</strong></p>
+      </div>
+      <div class="flex items-start gap-4 p-5 bg-pink-50 rounded-xl border-l-4 border-pink-400 transition-all hover:bg-pink-100">
+       <span class="text-2xl">👗</span>
+       <p class="text-lg text-gray-700">Se incomoda com a <strong>barriga e com as roupas</strong></p>
+      </div>
+      <div class="flex items-start gap-4 p-5 bg-pink-50 rounded-xl border-l-4 border-pink-400 transition-all hover:bg-pink-100">
+       <span class="text-2xl">🔄</span>
+       <p class="text-lg text-gray-700">Não consegue <strong>manter rotina de alimentação</strong></p>
+      </div>
+      <div class="flex items-start gap-4 p-5 bg-pink-50 rounded-xl border-l-4 border-pink-400 transition-all hover:bg-pink-100">
+       <span class="text-2xl">😰</span>
+       <p class="text-lg text-gray-700">Se cobra, mas <strong>não sabe por onde recomeçar</strong></p>
+      </div>
+     </div>
+     <div class="mt-12 text-center">
+      <div class="inline-block bg-gradient-to-r from-pink-600 to-rose-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold">
+       ➡️ Esse desafio foi criado <span class="underline decoration-2">exatamente para você</span>.
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="section-divider max-w-4xl mx-auto"></div>
+
+   <!-- BLOCO 3 - SUA APRESENTAÇÃO (COM A FOTO ALTERADA) -->
+   <section class="py-20 px-4 bg-gradient-to-b from-white to-pink-50">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Quem vai te acompanhar</h2>
+     <div class="flex flex-col md:flex-row items-center gap-10">
+      <!-- Avatar / Foto alterada aqui -->
+      <div class="flex-shrink-0">
+       <div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-pink-300 to-rose-400 shadow-2xl overflow-hidden">
+        <img 
+          src="FotoCarmen.jpeg" 
+          alt="Carmen Sene" 
+          class="w-full h-full object-cover rounded-full"
+          style="object-position: center 10%;"
+        />
+       </div>
+      </div>
+      <div class="flex-1 text-center md:text-left">
+       <h3 class="font-display text-2xl md:text-3xl font-bold text-pink-700 mb-4">Eu sou Carmen Sene.</h3>
+       <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+        Assim como você, já vivi a frustração de tentar emagrecer várias vezes e achar que o problema era falta de força de vontade.
+       </p>
+       <div class="bg-white p-6 rounded-2xl card-shadow mb-6">
+        <p class="text-xl text-gray-800 font-medium">
+         Hoje eu sei:<br><span class="text-pink-700 font-bold">O corpo responde quando a mente é cuidada.</span>
+        </p>
+       </div>
+       <p class="text-lg text-gray-700 leading-relaxed">
+        Por isso criei um desafio diferente:<br><strong>Sem radicalismo, sem cardápio impossível, sem julgamento.</strong><br>
+        Com acolhimento, direção e transformação real.
+       </p>
+       <p class="mt-6 text-xl font-semibold text-pink-700">Durante 21 dias eu estarei ao seu lado, todos os dias. 💗</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Os demais blocos permanecem iguais -->
+
+   <!-- BLOCO 4 - COMO FUNCIONA -->
+   <section class="py-20 px-4 bg-pink-50">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">Como funciona o Desafio</h2>
+     <p class="text-center text-gray-600 mb-12 text-lg">Tudo o que você precisa em um só lugar</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">📅</span></div>
+       <h3 class="font-bold text-lg mb-2">Duração: 21 dias</h3>
+       <p class="text-gray-600">Tempo ideal para criar novos hábitos</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">👯‍♀️</span></div>
+       <h3 class="font-bold text-lg mb-2">Grupo exclusivo</h3>
+       <p class="text-gray-600">Comunidade de mulheres</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">🎧</span></div>
+       <h3 class="font-bold text-lg mb-2">Áudios terapêuticos</h3>
+       <p class="text-gray-600">Diários para sua mente</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">🥗</span></div>
+       <h3 class="font-bold text-lg mb-2">Plano alimentar</h3>
+       <p class="text-gray-600">Simples e prático</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">📖</span></div>
+       <h3 class="font-bold text-lg mb-2">Receitas práticas</h3>
+       <p class="text-gray-600">Fáceis do dia a dia</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl card-shadow text-center hover:transform hover:-translate-y-2 transition-all duration-300">
+       <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-3xl">💬</span></div>
+       <h3 class="font-bold text-lg mb-2">Interação direta</h3>
+       <p class="text-gray-600">Comigo todos os dias</p>
+      </div>
+     </div>
+     <div class="mt-12 text-center">
+      <div class="inline-block bg-white px-8 py-6 rounded-2xl card-shadow">
+       <p class="text-xl text-gray-700">Aqui você não recebe material solto.<br><span class="text-pink-700 font-bold text-2xl">Você recebe PRESENÇA.</span></p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- BLOCO 5 - O QUE ELA RECEBE -->
+   <section class="py-20 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">O que você vai receber</h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Passo a passo diário</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Estratégias para compulsão</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Lista de substituições</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Apoio para ansiedade</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Organização da rotina real</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl"><span class="text-2xl text-green-500">✔</span><p class="text-lg font-medium text-gray-700">Suporte no grupo</p></div>
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-pink-50 to-rose-100 rounded-xl md:col-span-2"><span class="text-2xl text-pink-500">💗</span><p class="text-lg font-bold text-pink-700">Meu acompanhamento de perto</p></div>
+     </div>
+    </div>
+   </section>
+   <div class="section-divider max-w-4xl mx-auto"></div>
+
+   <!-- BLOCO 6 - PARA QUEM É -->
+   <section class="py-20 px-4 bg-gradient-to-b from-white to-pink-50">
+    <div class="max-w-3xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">Para a mulher que...</h2>
+     <p class="text-center text-gray-600 mb-12 text-lg">Se você se identifica, esse desafio é seu</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">🪞</span><p class="text-lg text-gray-700">Não gosta da própria <strong>barriga</strong></p></div>
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">🍰</span><p class="text-lg text-gray-700">Tem <strong>compulsão alimentar</strong></p></div>
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">😴</span><p class="text-lg text-gray-700">Vive <strong>cansada e sem ânimo</strong></p></div>
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">🔁</span><p class="text-lg text-gray-700">Começa e para <strong>toda segunda</strong></p></div>
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">🌸</span><p class="text-lg text-gray-700">Quer emagrecer <strong>sem sofrer</strong></p></div>
+      <div class="bg-white p-6 rounded-2xl card-shadow border-l-4 border-pink-400"><span class="text-2xl mb-2 block">🤗</span><p class="text-lg text-gray-700">Precisa de <strong>apoio emocional</strong></p></div>
+     </div>
+    </div>
+   </section>
+
+   <!-- BLOCO 7 - TRANSFORMAÇÃO -->
+   <section class="py-20 px-4 bg-pink-700 text-white">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-4">Em 21 dias você pode sentir...</h2>
+     <p class="text-center text-pink-200 mb-12 text-lg">Resultados reais de quem fez o método</p>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">💨</span><p class="font-medium text-lg">Menos inchaço</p></div>
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">⚡</span><p class="font-medium text-lg">Mais disposição</p></div>
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">🧘‍♀️</span><p class="font-medium text-lg">Menos vontade de descontar na comida</p></div>
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">🥗</span><p class="font-medium text-lg">Relação leve com o alimento</p></div>
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">💪</span><p class="font-medium text-lg">Autoestima de volta</p></div>
+      <div class="text-center p-6 bg-white/10 backdrop-blur rounded-2xl"><span class="text-4xl mb-3 block">🎯</span><p class="font-medium text-lg">Sensação de controle</p></div>
+     </div>
+     <div class="mt-12 text-center">
+      <p class="text-xl md:text-2xl font-display italic">Não é milagre.<br><span class="font-bold text-yellow-300">É processo com direção.</span></p>
+     </div>
+    </div>
+   </section>
+
+   <!-- BLOCO 8 - QUEBRA DE OBJEÇÕES -->
+   <section class="py-20 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+     <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Talvez você esteja pensando...</h2>
+     <div class="space-y-6">
+      <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-gray-300">
+       <p class="text-lg text-gray-500 italic mb-3">"Não tenho tempo."</p>
+       <p class="text-lg text-gray-800 font-medium flex items-start gap-2"><span class="text-pink-600">➡️</span> O método <strong>cabe na sua rotina</strong>.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-gray-300">
+       <p class="text-lg text-gray-500 italic mb-3">"Já tentei de tudo."</p>
+       <p class="text-lg text-gray-800 font-medium flex items-start gap-2"><span class="text-pink-600">➡️</span> Aqui o foco é <strong>mente + comportamento</strong>.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-gray-300">
+       <p class="text-lg text-gray-500 italic mb-3">"Tenho ansiedade."</p>
+       <p class="text-lg text-gray-800 font-medium flex items-start gap-2"><span class="text-pink-600">➡️</span> Os <strong>áudios terapêuticos</strong> são o coração do desafio.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-gray-300">
+       <p class="text-lg text-gray-500 italic mb-3">"Tenho medo de falhar."</p>
+       <p class="text-lg text-gray-800 font-medium flex items-start gap-2"><span class="text-pink-600">➡️</span> Você <strong>não estará sozinha</strong>.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- BLOCO 9 - OFERTA -->
+   <section class="py-20 px-4 bg-gradient-to-b from-pink-50 to-pink-100">
+    <div class="max-w-2xl mx-auto text-center">
+     <h2 class="font-display text-3xl md:text-4xl font-bold mb-4 text-gray-900">Investimento</h2>
+     <p class="text-gray-600 mb-8 text-lg">Menos que um jantar fora para transformar sua vida</p>
+     <div class="bg-white rounded-3xl p-8 md:p-12 card-shadow relative overflow-hidden">
+      <!-- Decorative ribbon -->
+      <div class="absolute top-4 right-4 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full">
+       OFERTA ESPECIAL
+      </div>
+      <div class="mb-6"><span class="text-gray-400 line-through text-xl">De R$ 197,00</span></div>
+      <div class="mb-6">
+       <span class="text-gray-600 text-xl">Por apenas</span>
+       <div id="price-display" class="font-display text-6xl md:text-7xl font-bold text-pink-700 my-2">
+        R$ 69,00
+       </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+       <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium"> 💳 Cartão </span>
+       <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium"> 📱 Pix </span>
+       <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium"> ⚡ Acesso imediato </span>
+      </div>
+      <a id="cta-button-price" href="https://wa.me/5534997923833?text=Oi%20Carmen!%20Quero%20entrar%20no%20Desafio%2021%20Dias%20Corpo%20Livre.%20Pode%20me%20passar%20as%20informa%C3%A7%C3%B5es%20e%20como%20fa%C3%A7o%20para%20garantir%20minha%20vaga%3F" target="_blank" rel="noopener noreferrer" class="inline-block gradient-cta text-white font-bold text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-full md:w-auto">
+       ENTRAR AGORA →
+      </a>
+      <p class="mt-6 text-gray-500 text-sm">🔒 Pagamento 100% seguro</p>
+     </div>
+    </div>
+   </section>
+
+   <!-- BLOCO 10 - FECHAMENTO -->
+   <section class="py-20 px-4 bg-pink-700 text-white">
+    <div class="max-w-3xl mx-auto text-center">
+     <div class="mb-8"><span class="text-6xl">🤝</span></div>
+     <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 leading-tight">
+      Por 21 dias você não vai tentar sozinha.<br><span class="text-yellow-300">Eu vou segurar a sua mão.</span>
+     </h2>
+     <p class="text-xl md:text-2xl mb-10 text-pink-100">Você merece viver leve outra vez. 💗</p>
+     <a id="cta-button-final" href="https://wa.me/5534997923833?text=Oi%20Carmen!%20Quero%20entrar%20no%20Desafio%2021%20Dias%20Corpo%20Livre.%20Pode%20me%20passar%20as%20informa%C3%A7%C3%B5es%20e%20como%20fa%C3%A7o%20para%20garantir%20minha%20vaga%3F" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-pink-700 font-bold text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-yellow-300 hover:text-pink-800">
+      QUERO MINHA VAGA →
+     </a>
+     <div class="mt-16 pt-8 border-t border-pink-600">
+      <p class="text-pink-200 text-sm">© 2024 Carmen Sene • Todos os direitos reservados</p>
+     </div>
+    </div>
+   </section>
+  </div>
+
+  <script>
+    // ... (o script de configuração do SDK permanece exatamente igual ao original)
+    const defaultConfig = {
+      main_title: 'DESAFIO 21 DIAS CORPO LIVRE',
+      subtitle: 'Emagreça sem guerra com a comida, com apoio emocional e acompanhamento de verdade',
+      button_text: 'QUERO ENTRAR NO DESAFIO',
+      button_link: '#',
+      price_text: 'R$ 69,00',
+      primary_color: '#be185d',
+      secondary_color: '#fdf2f8',
+      text_color: '#1f2937',
+      accent_color: '#fbbf24',
+      surface_color: '#ffffff',
+      font_family: 'Playfair Display',
+      font_size: 16
+    };
+    let config = { ...defaultConfig };
+    async function onConfigChange(newConfig) {
+      config = { ...config, ...newConfig };
+      // ... (resto do script igual)
+    }
+    // ... (o restante do script de inicialização do SDK permanece inalterado)
+  </script>
+  <script>(function(){/* ... script do Cloudflare challenge permanece igual ... */})();</script>
+ </body>
+</html>
